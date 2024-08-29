@@ -1,0 +1,349 @@
+@font-face {
+    font-family: "Montserrat";
+    src: url("fonts/Montserrat-Regular.ttf");
+}
+
+@font-face {
+    font-family: "MontserratBold";
+    src: url("fonts/Montserrat-Bold.ttf");
+}
+
+body {
+    margin: 0;
+    font-family: Montserrat, sans-serif;
+}
+
+#main {
+    background-image: url("images/bg.png");
+    /* background-size: 1920px 100%; - по ширине 1920px, по высоте 100%  */
+    background-size: 1920px 100%;
+    background-position: center;
+}
+
+#mainContainer {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding-top: 43px;
+}
+
+#mainHeader {
+    display: flex;
+    align-items: center;
+}
+
+#mainHeaderLogo span {
+    font-size: 18px;
+    color: rgb(56, 104, 210);
+    margin-left: 10px;
+}
+
+#mainHeaderMenu {
+    margin-left: 264px;
+}
+
+#mainHeaderMenu a.menuItem {
+    font-size: 16px;
+    font-family: MontserratBold, sans-serif;
+    color: rgb(56, 104, 210);
+    margin-right: 30px;
+    padding: 5px 10px;
+    /* text-decoration: none; - Отменяет подчёркивание у ссылок */
+    text-decoration: none;
+}
+
+#mainHeaderMenu a.menuItem:hover {
+    border-bottom: 2px solid rgb(56, 104, 210);
+}
+
+#mainHeaderPhone {
+    margin-left: 100px;
+}
+
+#mainHeaderPhone span {
+    font-size: 20px;
+    font-family: MontserratBold, sans-serif;
+    color: rgb(56, 104, 210);
+    margin-left: 10px;
+}
+
+#mainHeaderPhone span,
+#mainHeaderPhone img {
+    vertical-align: middle;
+}
+
+#mainContent {
+    margin-top: 181px;
+    max-width: 730px;
+}
+
+#mainTitle {
+    font-size: 40px;
+    font-family: MontserratBold, sans-serif;
+    color: rgb(56, 104, 210);
+    line-height: 45px;
+}
+
+#mainItems {
+    margin-top: 36px;
+}
+
+#mainItems .mainItem {
+    margin-top: 17px;
+}
+
+#mainItems .mainItem span,
+#mainItems .mainItem img {
+    vertical-align: middle;
+}
+
+#mainItems .mainItem span {
+    margin-left: 11px;
+    font-size: 18px;
+    color: rgb(34, 56, 104);
+}
+
+.button {
+    background-color: rgb(56, 104, 210);
+    border: 1px solid rgb(56, 104, 210);
+    box-shadow: 3.536px 3.536px 20.01px 2.99px rgba(40, 67, 127, 0.36);
+    width: 324px;
+    height: 58px;
+    font-size: 18px;
+    font-family: MontserratBold, sans-serif;
+    color: rgb(255, 255, 255);
+}
+
+#mainAction {
+    margin-top: 54px;
+    margin-bottom: 250px;
+}
+
+.title {
+    font-size: 35px;
+    font-family: MontserratBold, sans-serif;
+    color: rgb(56, 104, 210);
+}
+
+#about {
+    margin-top: 160px;
+    margin-bottom: 126px;
+}
+
+#aboutContainer {
+    max-width: 1170px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#aboutContainer .aboutItem {
+    margin-top: 40px;
+    max-width: 560px;
+}
+
+#aboutTitle {
+    margin-bottom: 60px;
+}
+
+#aboutContainer .aboutItem .aboutText {
+    font-size: 16px;
+    color: rgb(40, 67, 127);
+    line-height: 21px;
+    margin-top: 45px;
+}
+
+#aboutContainer .aboutItem .aboutItemImage {
+    box-shadow: 9px 9px 0 #ebf0fa;
+}
+
+#aboutQuote {
+    margin-top: 80px;
+    display: flex;
+    align-items: center;
+}
+
+#aboutQuoteText {
+    margin-left: 29px;
+    font-size: 16px;
+    color: rgb(40, 67, 127);
+    line-height: 21px;
+}
+
+#services {
+    margin-bottom: 108px;
+}
+
+#servicesContainer {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+#servicesTitle {
+    margin-bottom: 60px;
+}
+
+#serviceItems {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#serviceItems .serviceItem {
+    width: 292px;
+    height: 292px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#serviceItems .serviceItem.bg {
+    background: #fbfcff;
+}
+
+#serviceItems .serviceItem .serviceItemText {
+    font-size: 18px;
+    font-family: MontserratBold, sans-serif;
+    color: rgb(56, 104, 210);
+    text-transform: uppercase;
+    line-height: 23px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+#reserve {
+    background-image: url("images/reserveBg.png");
+    background-size: 1920px 470px;
+    background-position: center;
+    padding: 132px 0;
+}
+
+#reserveContainer {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+#reserveTitle {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+#reserveDescription {
+    font-size: 16px;
+    color: rgb(40, 67, 127);
+    line-height: 21px;
+    text-align: center;
+    max-width: 530px;
+    margin: 0 auto;
+}
+
+#reserveForm {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#reserveForm input {
+    border-width: 1px;
+    border-color: rgb(56, 104, 210);
+    border-style: solid;
+    background-color: rgb(255, 255, 255);
+    width: 268px;
+    height: 48px;
+    padding: 20px;
+    /* При border-box ширина width: 268px включает ширину padding.
+    Без него ширина бы стала не 268, а 288px */
+    box-sizing: border-box;
+    margin-right: 10px;
+}
+
+#reserveForm button {
+    height: 48px;
+}
+
+#doctors {
+    margin: 122px 0 118px 0;
+}
+
+#doctorsContainer {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+#doctorsTitle {
+    margin-bottom: 60px;
+}
+
+#doctorsImages {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#footer {
+    background: #28437f;
+}
+
+#footerContainer {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 50px 0;
+    display: flex;
+    align-items: center;
+}
+
+#footerLogo span {
+    font-size: 18px;
+    color: white;
+    margin-left: 10px;
+}
+
+#footerTime {
+    margin-left: 142px;
+    display: flex;
+}
+
+#footerAddress {
+    margin-left: 142px;
+    display: flex;
+}
+
+#footerTimeText, #footerAddressText {
+    margin-left: 9px;
+}
+
+#footerTimeTextTitle, #footerAddressTextTitle {
+    font-size: 16px;
+    font-family: MontserratBold, sans-serif;
+    color: rgb(255, 255, 255);
+}
+
+#footerTimeTextDescription, #footerAddressTextDescription {
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    margin-top: 5px;
+}
+
+#footerPhone {
+    margin-left: 130px;
+}
+
+#footerPhone span {
+    font-size: 20px;
+    font-family: MontserratBold, sans-serif;
+    color: white;
+    margin-left: 10px;
+}
+
+#footerPhone span,
+#footerPhone img {
+    vertical-align: middle;
+}
+
+
+
+
+
+
+
